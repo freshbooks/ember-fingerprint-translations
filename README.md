@@ -8,19 +8,25 @@ Assuming that you already have a translation fetcher service with the following 
 
 Assuming that you have the following translation file:
 
+
 /public/translations/en/upgrade/errors.json
 ```
 {
   "4012": "Wrong credentials"
 }
+```
 
-And a translation fetcher service with a similar API
+
+And a translation fetcher service with an API that look like this:
 
 ```
-// Fetch the translation located at `/translations/${i18n.get('locale')}/upgrade/errors.json`
 translationService.fetch('upgrade.errors');-
+// Fetch the translation located at `/translations/${i18n.get('locale')}/upgrade/errors.json`
 
 ```
 
 You can use the TranslationMap service provided by this plugin to find the fingerprinted path
 associated to this asset.
+
+
+[Fetching Translations Live](https://github.com/jamesarosen/ember-i18n/wiki/Example:-Fetching-Translations-Live)
