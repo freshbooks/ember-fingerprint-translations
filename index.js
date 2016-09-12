@@ -12,7 +12,6 @@ module.exports = {
   },
 
   postprocessTree: function(type, tree) {
-    debugger;
     if (type === "all" && this.options.enabled) {
       return TranslationRev(tree, this.options || {});
     }
